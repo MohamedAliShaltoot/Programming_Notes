@@ -1,2 +1,11 @@
 # Dart Language Notes :
 
+1) Casting in Dart
+
+  1- if number is var x =10;
+     var y = x.toDouble();
+     var y = x.toString();
+     and so on
+
+  2- but if was a string like var x ="10";
+     var y = num.parse(x);   
