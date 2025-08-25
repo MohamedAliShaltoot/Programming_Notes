@@ -18,3 +18,19 @@
      but if 
      var x =null;
      var y = x ?? "Guest"; // here y = Guest
+
+2) Naming a loop in Dart    
+
+   ali:
+
+   for(){
+
+    mohamed:
+
+    for(){
+
+
+   if reached to a specified condition break ali;
+    }
+   }
+   why? to stop the outer loop from inner loop
