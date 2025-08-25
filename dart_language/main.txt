@@ -19,7 +19,7 @@
      var x =null;
      var y = x ?? "Guest"; // here y = Guest
 
-2) Naming a loop in Dart    
+ 3) Naming a loop in Dart    
 
    ali:
 
@@ -34,3 +34,9 @@
     }
    }
    why? to stop the outer loop from inner loop
+
+  4) Random() in Dart 
+     import 'dart:math'; 
+
+     var x = Random().nextInt(7); // 7 here is the max number he can reach
+    print(x);
