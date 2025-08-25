@@ -9,3 +9,12 @@
 
   2- but if was a string like var x ="10";
      var y = num.parse(x);   
+
+ 2) Checking the values in Dart    
+
+  1- if value is var x ="ali";
+     var y = x ?? "Guest"; // here y = ali
+
+     but if 
+     var x =null;
+     var y = x ?? "Guest"; // here y = Guest
