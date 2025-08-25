@@ -43,15 +43,27 @@
   
  5) Lists in Dart 
 
-    void main() {
- var list =[4,7,6,3,43,4343];
- print("first appraoch");
- list.forEach((i){
-     print(i);
- });
-   print("\n \n");
-  print("second appraoch");
- for(var i in list){
-     print(i); 
- }
-}
+         void main() {
+      var list =[4,7,6,3,43,4343];
+      print("first approach");
+      list.forEach((i){
+         print(i);
+      });
+         print("\n \n");
+      print("second approach");
+         for(var i in list){
+         print(i); 
+         }
+         }
+
+
+ 5) typedef in Dart
+        
+        // to ensure that the call fun will works correctly
+        // s will receive only function that takes two parameter
+
+      typedef operation (a,b);
+
+      calc(a,b,operation s){
+         s(a,b);
+      }
