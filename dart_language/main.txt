@@ -40,3 +40,18 @@
 
      var x = Random().nextInt(7); // 7 here is the max number he can reach
     print(x);
+  
+ 5) Lists in Dart 
+
+    void main() {
+ var list =[4,7,6,3,43,4343];
+ print("first appraoch");
+ list.forEach((i){
+     print(i);
+ });
+   print("\n \n");
+  print("second appraoch");
+ for(var i in list){
+     print(i); 
+ }
+}
