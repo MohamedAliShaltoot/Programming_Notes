@@ -136,4 +136,29 @@
 
       لو حابب، ممكن نطوّر المثال ده ونخليه جزء من تطبيق Flutter، أو نضيف ميزات زي expiration 
       أو تخزين مؤقت. تحب نكمل؟
-      */   
+      */ 
+
+  8) Enum in Dart 
+     
+      void main() {
+      info(Color.red);
+      }
+
+      enum Color{
+         red,blue
+      }
+
+      info(Color c){
+         switch (c){
+            case Color.red :
+            print("red");
+            break;
+            case Color.blue :
+            print("blue");
+            break;
+            default :
+            print("Error 404");
+            break;
+            
+         }
+      }
