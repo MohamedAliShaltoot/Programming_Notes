@@ -57,7 +57,7 @@
          }
 
 
- 5) typedef in Dart
+ 6) typedef in Dart
         
         // to ensure that the call fun will works correctly
         // s will receive only function that takes two parameter
@@ -67,3 +67,73 @@
       calc(a,b,operation s){
          s(a,b);
       }
+
+  7] Generics in Dart
+
+      
+      class Cache<T> {
+      final Map<String, T> _store = {};
+      /*
+      {
+            "":T,
+            "":T,
+            "":T,
+      }
+      */
+      void set(String key, T value) {
+         _store[key] = value;
+      }
+
+      T? get(String key) {
+         return _store[key];
+      }
+      }
+      void main() {
+      // كاش لتخزين نصوص
+      var stringCache = Cache<String>();
+      stringCache.set("username", "Mohamed");
+      print(stringCache.get("username")); // Mohamed
+
+      // كاش لتخزين أرقام
+      var intCache = Cache<int>();
+      intCache.set("score", 99);
+      print(intCache.get("score")); // 99
+
+      // كاش لتخزين كائنات مخصصة
+      var userCache = Cache<User>();
+      userCache.set("admin", User("Sara", 30));
+      print(userCache.get("admin")?.name); // Sara
+      }
+
+      // كلاس مستخدم كمثال
+      class User {
+      final String name;
+      final int age;
+
+      User(this.name, this.age);
+      }
+
+
+      /*
+
+      🔍 شرح الفكرة:
+
+      - Cache<T> هو كلاس عام، النوع T بيتغير حسب الاستخدام.
+      - لما تستخدم Cache<String>، الكاش بيقبل فقط String.
+      - لما تستخدم Cache<User>, الكاش بيقبل فقط كائنات من نوع User.
+      - ده بيخليك تكتب كود واحد، لكن تستخدمه مع أنواع مختلفة، بأمان وبدون تكرار.
+
+      ---
+
+      💡 ليه ده مفيد؟
+
+      - يقلل التكرار في الكود.
+      - يخلي الكود أكثر وضوحًا وتنظيمًا.
+      - يمنع الأخطاء وقت الكتابة (compile time).
+      - يسهل إعادة استخدام الكود في مشاريع مختلفة.
+
+      ---
+
+      لو حابب، ممكن نطوّر المثال ده ونخليه جزء من تطبيق Flutter، أو نضيف ميزات زي expiration 
+      أو تخزين مؤقت. تحب نكمل؟
+      */   
