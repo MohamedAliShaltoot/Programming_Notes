@@ -1,3 +1,4 @@
 1] ctrl + B = Toggle Sidebar
 2] ctrl + `  or j = Toggle Bottom Panel
 3] ctrl + p = help you to choose a file
+4] ctrl + arrowUp or arrowDown = Scrolling without needing a mouse
