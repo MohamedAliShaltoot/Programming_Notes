@@ -6,3 +6,4 @@
 6] ctrl + shift + l = identify a word the press the shortcuts and it will rename in the hole file
 7] ctrl + d = how to select multiple instances of a word
 8] shift + alt + arrowDown = how to copy multiple instances of a line
+9]  alt + arrowDown or alt + arrowUp = how to move  a line to the next or previous position
