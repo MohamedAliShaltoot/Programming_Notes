@@ -4,3 +4,4 @@
 4] ctrl + arrowUp or arrowDown = Scrolling without needing a mouse
 5] ctrl + \ = Split the editor then ctrl + w to end splitting
 6] ctrl + shift + l = identify a word the press the shortcuts and it will rename in the hole file
+7] ctrl + d = how to select multiple instances of a word
