@@ -2,4 +2,5 @@
 2] ctrl + `  or j = Toggle Bottom Panel
 3] ctrl + p = help you to choose a file
 4] ctrl + arrowUp or arrowDown = Scrolling without needing a mouse
-5] ctrl + \ = Split the editor then ctrl+w to end splitting
+5] ctrl + \ = Split the editor then ctrl + w to end splitting
+6] ctrl + shift + l = identify a word the press the shortcuts and it will rename in the hole file
