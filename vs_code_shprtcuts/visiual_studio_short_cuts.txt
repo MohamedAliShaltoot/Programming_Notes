@@ -1,0 +1,2 @@
+1] ctrl + B = Toggle Sidebar
+2] ctrl + `  or j = Toggle Bottom Panel
